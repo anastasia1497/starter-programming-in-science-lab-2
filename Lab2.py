@@ -3,7 +3,14 @@
 # Round up to one decimal point
 def calculate_height(h0, t):
     # TODO: Implement this function
-    pass  # Replace with your code
+    g = 9.8
+    height = h0 - 0.5 * g * (t ** 2)
+    return round(distance, 1)
+
+if _name_ == "_main_":
+    h0 = 50
+    for time in [1, 2, 3]:
+        print(f"Height of the ball at time {time} second = {calculate_height(h0, time)} meters")
 
 # Function 2: Calculate the distance traveled by the car
 # This function should take the time t as input and return the distance traveled by the car.
